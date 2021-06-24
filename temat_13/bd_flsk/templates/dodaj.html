@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+<h1> Dodaj pracownika </h1>
+<p class = "lead"> Formularz dodawania pracownika </p>
+	<div class="starter-template">
+	<form action = "{{ url_for('dodaj') }}" method = "POST">
+
+	 Imię<br>
+	 <input type = "text" name = "imie" /></br>
+
+	 Nazwisko<br>
+	 <input type = "text" name = "nazwisko" /></br>
+
+	 Numer pracownika<br>
+	 <input type = "text" name = "nr_pracownika" /></br>
+
+	 Adres (Ulica i numer domu)<br>
+	 <textarea name = "adres" ></textarea><br>
+	 
+	 Miasto <br>
+	 <input type = "text" name = "miasto" /><br>
+	 
+	 
+	 <input type = "submit" value = "Dodaj" /><br>
+	 </form>
+	 </div>
+</div>
+{% endblock %}
+

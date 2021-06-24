@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+	<h1>Informacje</h1>
+	<p class = "lead">Blog ten opiera się na frameworku Flask na silniku Jinja2</p>
+	<h2>Informacje c.d.</h2>
+	{% for info in infos %}
+	<div class="comment"><p>{{info.autor.name}}  napisal/a :<b>{{info.body}}</b></p></div>
+	{% endfor %}
+</div>
+{% endblock %}
+

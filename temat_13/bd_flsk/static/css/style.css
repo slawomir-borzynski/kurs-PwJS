@@ -1,0 +1,44 @@
+body {
+	font-size:18px;
+	color:#ffffff;
+	background:#000000;
+	font-family: 'Dela Gothic One', serif;
+	font-family: 'Oswald', sans-serif;
+	   } 
+	   
+#centsection{
+	 text-align:center;
+}
+h1{
+	font-family: 'Dela Gothic One', serif;
+	font-size:80px;
+}
+h2{
+	font-family: 'Oswald', sans-serif;
+	font-size:40px;
+}
+.navbar-default .nav li a .glyphicon {
+	color: #ff0000;
+}
+
+.jumbotron{
+	background-color: #545252;
+}
+
+.navbar-brand img {
+	max-width: 32px;
+	max-height: 32px;	
+	
+}
+.carousel img{
+	max-width:1024px;
+	max-height:1024px;
+	margin:auto;
+	
+}
+#input{
+	color:#000000;
+}
+input [type=text]{
+	color:#ffffff;
+}
