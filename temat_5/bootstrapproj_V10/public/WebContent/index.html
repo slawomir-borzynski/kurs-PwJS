@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+   
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald&display=swap" rel="stylesheet">
+   
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="css/style.css" rel="stylesheet"> 
+  <script src="js/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><!-- Wymagane do responsywności -->
+	
+    <title>Strona glowna</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+		<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+	 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" ariaexpanded="false">
+					<span class="sr-only">Toggle navigation</span>
+	 				<span class="icon-bar"></span>
+	 				<span class="icon-bar"></span>
+	 				<span class="icon-bar"></span>
+	 			</button>
+	 			<a class="navbar-brand" href="#"> <img src="img/stok.jpg" alt=”logo”></a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+	 				<li class="active"><a href="#main">Strona glowna</a></li>
+	 				<li><a href="#" class=”btn btn-primary”>Galeria</a></li>
+	 				<li><a href="#staff" class=”btn btn-primary”>Załoga</a></li>
+	 				<li><a href="#contact" class=”btn btn-primary”>Kontakt</a></li>
+	 				<li><a href="#" class=”btn btn-primary”>Sponsorowane</a></li>
+	 			</ul> 
+			</div>
+			</div>
+		</nav> 
+		<header>
+			<div class=”container”>
+				<div id="carouselID" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					 <li data-target="#carouselID" data-slide-to="0" class="active"></li>
+					 <li data-target="#carouselID" data-slide-to="1"></li>
+					<li data-target="#carouselID" data-slide-to="2"></li>
+					<li data-target="#carouselID" data-slide-to="1"></li>
+					<li data-target="#carouselID" data-slide-to="2"></li>
+				</ol> 
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+					 <img src="img/caro/drzewa1.jpg" alt="Slajd1">
+					 <div class="carousel-caption">Slajd1</div>
+					</div>
+					<div class="item">
+					<img src="img/caro/drzewa2.jpg" alt="Slajd2">
+					 <div class="carousel-caption">Slajd2</div>
+					 </div>
+					 <div class="item">
+					<img src="img/caro/drzewacmentarzzyd.jpg" alt="Slajd3">
+					 <div class="carousel-caption">Slajd3</div>
+					 </div>
+					 <div class="item">
+					<img src="img/caro/rower.jpg" alt="Slajd4">
+					 <div class="carousel-caption">Slajd4</div>
+					 </div>
+					 <div class="item">
+					<img src="img/caro/woda.jpg" alt="Slajd5">
+					 <div class="carousel-caption">Slajd5</div>
+					 </div>
+				</div> 
+				<a class="left carousel-control" href="#carouselID" role="button"
+				data-slide="prev">
+				 <span class="glyphicon glyphicon-chevron-left" ariahidden="true"></span>
+				 <span class="sr-only">Poprzedni</span>
+				</a>
+				<a class="right carousel-control" href="#carouselID" role="button"
+				data-slide="next">
+				 <span class="glyphicon glyphicon-chevron-right" ariahidden="true"></span>
+				 <span class="sr-only">Następny</span>
+				</a> 
+				</div> 
+			</div>
+		</header> 
+		<section id="main" class="jumbotron">
+			<div class=”container”>
+				<h1><a href=”#” title=”#”><span class=”	glyphicon glyphicon-apple”></span></a> Pierwsza sekcja strony!</h1>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+				</p>
+				</div>
+		</section> 
+		<section id="staff" style="text-align:center">
+			<div class=”container”>
+				<h2>Nasi redaktorzy:</h2>
+				<p>Przykladowi redaktorzy są redaktorami których jedynym zadaniem tutaj jest redakcja treści</p>
+			<div class="row">
+			  <div class="col-sm-4"><img src="img/kwadraty/grun.jpg" class="img-responsive img-circle" alt="red1"><h3>Redaktor #1</h3></div>
+			  <div class="col-sm-4"><img src="img/kwadraty/rot.jpg" class="img-responsive img-circle" alt="red2"><h3>Redaktor #2</h3></div>
+			  <div class="col-sm-4"><img src="img/kwadraty/orang.jpg" class="img-responsive img-circle" alt="red3"><h3>Redaktor #3</h3></div>
+			</div>
+			
+			</div>
+		</section>	
+		<section id="contact">
+			<div class="container">
+			<h3>Kontakt z nami</h3>
+				<form action="index.html#kontakt" method="post" onsubmit="return checkForm()" >>
+					<div class="form-group">
+						<p id=”errorNazwa” class="hide">Podanie imienia jest wymagane!</p> 
+				    	<label for="nazwa">Imie i nazwisko:</label>
+				    	<input type="text" class="form-control" id="nazwisko" placeholder="Wprowadz swoje imię i nazwisko">
+				  	</div>
+				  	<div class="form-group">
+				  		<p id=”errorMail” class="hide">Podanie e-maila jest wymagane!</p>
+				  		<p id=”errorFormat” class="hide">Niepoprawny format e-mail!</p>
+				    	<label for="e-mail">Adres e-mail:</label>
+				    	<input type="email" class="form-control" id="e-mail" placeholder="Wprowadz email">
+				  	</div>
+				  	<div class="form-group">
+				  		<p id=”errorWiadomosc” class="hide">Podanie wiadomości jest wymagane!</p> 
+				    	<label for="wiadomosc">Wprowadz wiadomość (max. 250 znaków):</label>
+				    	<textarea class="form-control" id="wiadomosc" rows="5" maxlength = "250"></textarea>
+				  	</div>
+				  	<div class="form-check">
+				    	<input type="checkbox" class="form-check-input" id="notabot">
+				    	<label class="form-check-label" for="notabot">Nie jestem robotem</label>
+				  	</div>
+				  	<button type="submit" class="btn btn-primary">Wyślij</button>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class=”container”>
+				<div class=”container”>
+					<button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#privacypolicy">
+					 Polityka prywatności
+					</button>
+				</div> 
+			</container>
+		</footer>
+		
+		<div class="modal fade" id="privacypolicy" tabindex="-1" role="dialog"aria-labelledby="myModalLabel">
+			 <div class="modal-dialog" role="document">
+				 <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" arialabel="Close">
+							<span ariahidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+					</div>
+					<div class="modal-body">
+					...
+					</div> 
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div> 
+		
+</body>
+</html>
