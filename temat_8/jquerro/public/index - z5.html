@@ -1,0 +1,55 @@
+<!doctype html>	
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title>JQuerro</title>
+	
+
+	 	<script>
+	$(document).ready(function(){
+	$("button").click(function(){
+	$("h1").addClass("darkG");
+	$("h2").addClass("brown");
+	$("p").addClass("darkB");
+	$("div").addClass("important");
+	});
+	});
+	</script>
+	<style>
+	.important {
+	font-weight: bold;
+	font-size: xx-large;
+	}
+	.darkG {
+	color: rgb(0, 128, 128);
+	}
+	.brown {
+	color: brown;
+	}.darkB {
+	color: rgb(0, 64, 128);
+	}
+	
+	</style>
+ 	
+ 	
+	
+</head>
+	
+	<body>
+	
+	<h1>Nagłówek 1</h1>
+	<h2>Nagłówek 2</h2>
+	<p>Wiersz tesktu.</p>
+	<p>Kolejny wiersz tekstu.</p>
+	<div>To jest tekst specjalny, ani wiersz ani nagłówek</div><br>
+	<button>Modyfikuj</button>
+	
+	
+</body>
+
+
+</html>

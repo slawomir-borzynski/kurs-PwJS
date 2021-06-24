@@ -1,0 +1,49 @@
+<!doctype html>	
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title>JQuerro</title>
+	
+
+	
+	<script>
+	$(document).ready(function(){
+	$("#flip").click(function(){
+	$("#panel").slideToggle("slow"); //slideDown() - rozwin, slideUp() - zwin, toggle - oba na raz
+	});
+	});
+	</script>
+	<style>
+	#panel, #flip {
+	padding: 5px;
+	text-align: center;
+	background-color: #e5eecc;
+	border: solid 1px #c3c3c3;
+	}
+	#panel {
+	padding: 50px;
+	display: none;
+	}
+	</style>
+	
+	
+	
+</head>
+	
+	<body>
+
+	
+
+	<div id="flip">Dodatkowe opcje...</div>
+	<div id="panel">Rozwinąłeś panel dodatkowych ściśle tajnych opcji.</div>
+
+
+	
+</body>
+
+
+</html>
