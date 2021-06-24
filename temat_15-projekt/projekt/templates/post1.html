@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+		<section id="article">
+			<div class=”container” id="centsection">
+				<h1> Zimowe podróżowanie - co warto wiedzieć?</h1>
+				<p>
+					Jazda turystyczna zimą oferuje wiele różnych przeżyć, lecz wymaga dłuższego przygotowania.
+				</p>
+			</div>
+			<div class=”container” id="centsection">
+				<p><br></p>
+				<img src = "../static/img/galeria/picture3.jpg">
+				<p>Chłód i śnieżna poducha nie powstrzymają turysty przed głodem odkrywania</p>
+				<p><br></p>
+			</div>
+			<div class=”container” id="textsection">
+				<p>	
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+				</p>
+			
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+				</p>
+			
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+				</p>
+			</div>
+			
+		</section>
+		<section id='comments' style="margin-left:15%; margin-right:15%;">
+
+		<div>
+		{% if current_user.is_authenticated %}
+		<div>
+		<p class = "lead"> Dodaj komentarz!</p>
+			<form action = "{{ url_for('insertComment') }}" method = "POST">
+			 Piszesz jako {{current_user.name}}<br>
+			 <input type="hidden" name="post_id" value="1">
+			 <input type="hidden" name="name" value={{current_user.name}}>
+			 Treść:<br>
+			 <textarea name = "tresc" rows="6" cols="100" required></textarea><br>
+			 <input type = "submit" value = "Dodaj"/><br>
+			 </form>
+		</div>
+		{% endif %}
+		<table border = 1>
+			<thead><h3>Komentarze:</h3></thead>
+		{% for comment in comments %}
+			<tr>{{comment["name"]}}, {{comment["inserted"]}}, napisał/a:<br></tr>
+			<tr>{{comment["content"]}}<br></tr>
+			<tr><br><tr>
+		{% endfor %}
+		</div>
+		</section>
+{% endblock %}
+

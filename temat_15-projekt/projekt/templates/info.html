@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+	<h1>Informacje</h1>
+	<p class = "lead">Blog ten opiera się na frameworku Flask na silniku Jinja2</p>
+	{% if current_user.is_authenticated %}<p class = "lead">Jesteś zalogowany jako {{current_user.name}}</p>{% endif %}
+	<h2>Pętla for we Flasku - wyświetlanie tabeli zakodowanej w funkcji info()</h2>
+	{% for info in infos %}
+	<div class="comment"><p>{{info.autor.name}}  napisal/a :<b>{{info.body}}</b></p></div>
+	{% endfor %}
+</div>
+{% endblock %}
+
